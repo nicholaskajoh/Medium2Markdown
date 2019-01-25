@@ -1,9 +1,7 @@
 node_modules/
 
-output/*
-!output/posts/
-output/posts/*
-!output/posts/.gitkeep
+input/*
+!input/.gitkeep
 
-posts/*
-!posts/.gitkeep
+output/*
+!output/.gitkeep

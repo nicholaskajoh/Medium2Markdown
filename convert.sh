@@ -1,6 +1,6 @@
-for file in ./posts/*; do 
+for file in ./input/*; do 
     if [ -f "$file" ]; then 
-        echo "Converting $file to markdown..."
         node index.js --filePath "$file"
-    fi 
+        echo "Converted $file"
+    fi
 done
