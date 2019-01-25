@@ -1,0 +1,9 @@
+node_modules/
+
+output/*
+!output/posts/
+output/posts/*
+!output/posts/.gitkeep
+
+posts/*
+!posts/.gitkeep
