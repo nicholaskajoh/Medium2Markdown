@@ -11,6 +11,7 @@ const { filePath } = argv;
 
 // read and clean the contents of the file
 let htmlString = fs.readFileSync(filePath, 'utf8');
+htmlString = util.removeTitleTag(htmlString);
 htmlString = util.removeStyleTags(htmlString);
 
 // initialize the Turndown service and convert the HTML to Markdown

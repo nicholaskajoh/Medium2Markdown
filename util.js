@@ -10,7 +10,10 @@ module.exports = {
     postSlug = postSlug.join('-').toLowerCase().replace(/-+/g, '-');
     return postSlug;
   },
+  removeTitleTag(htmlString) {
+    return htmlString.replace(/<title([\S\s]*?)>([\S\s]*?)<\/title>/i, '');
+  },
   removeStyleTags(htmlString) {
-    return htmlString.replace(/<style([\S\s]*?)>([\S\s]*?)<\/style>/i, '');
+    return htmlString.replace(/<style([\S\s]*?)>([\S\s]*?)<\/style>/ig, '');
   },
 }
